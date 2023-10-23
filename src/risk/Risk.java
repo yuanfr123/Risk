@@ -6,7 +6,7 @@ public class Risk {
 		System.out.println("Le Risk fonctionne correctement");
 		System.out.println("Oui en effet");
 		System.out.println("Sur");
-
+		System.out.println("kikou");
 	}
 
 }

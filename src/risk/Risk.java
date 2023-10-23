@@ -7,5 +7,4 @@ public class Risk {
 		System.out.println("Oui en effet");
 		System.out.println("Sur");
 	}
-
 }

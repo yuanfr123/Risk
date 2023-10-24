@@ -42,6 +42,7 @@ public class ConnexionDB {
         }
     }
 
+    
     // méthode permettant l'insertion de joueurs
     public void insertJoueur(String nom, String prenom, Date dateNaissance, String nomEquipe) {
         try {

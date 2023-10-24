@@ -3,27 +3,26 @@ import java.util.Date;
 
 public class Joueur {
 	// Attributs 
-	private int id; 
+	private String id; 
 	private String nom;
 	private String prenom;
-	private Date dtNaissance = new Date();
-	private String statut;
+	private String dtNaissance;
 
 	// Constructeur
-	/**
-	 * @param id
-	 */
-	public Joueur(int id) {
+	public Joueur(String id, String nom, String prenom, String dtNaissance) {
 		this.id = id;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.dtNaissance = dtNaissance;
 	}
 	
-	// Methodes
+	// Getter and setter
 	/** @return int */
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 	/** @param id */
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	/** @return String */
@@ -43,11 +42,16 @@ public class Joueur {
 		this.prenom = prenom;
 	}
 	/** @return Date */
-	public Date getDtNaissance() {
+	public String getDtNaissance() {
 		return dtNaissance;
 	}
 	/** @param dtNaissance */
-	public void setDtNaissance(Date dtNaissance) {
+	public void setDtNaissance(String dtNaissance) {
 		this.dtNaissance = dtNaissance;
+	}
+
+	@Override
+	public String toString() {
+		return "Joueur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", dtNaissance=" + dtNaissance + "]";
 	}	
 }
